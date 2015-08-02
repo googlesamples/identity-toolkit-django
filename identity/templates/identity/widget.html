@@ -8,9 +8,8 @@
 	  var config = {
 	      apiKey: '{{ apiKey }}',
 	      signInSuccessUrl: '/',
-	      loginUrl: '/login',
-	      idps: ["password"],
-	      oobActionUrl: '/email',
+	      signInOptions: ["google", "password"],
+	      oobActionUrl: '/',
 	      siteName: 'this site'
 	  };
 	  // The HTTP POST body should be escaped by the server to prevent XSS
