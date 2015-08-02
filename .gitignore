@@ -52,3 +52,7 @@ docs/_build/
 
 # PyBuilder
 target/
+gitkit-server-config.json
+*.p12
+*.pem
+widget_config.json

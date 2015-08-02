@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="//www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+	<link type="text/css" rel="stylesheet" href="//www.gstatic.com/authtoolkit/css/gitkit.css" />
+	<script type="text/javascript">
+	  var config = {
+	      apiKey: '{{ apiKey }}',
+	      signInSuccessUrl: '/',
+	      signInOptions: ["google", "password"],
+	      oobActionUrl: '/',
+	      siteName: 'this site'
+	  };
+	  // The HTTP POST body should be escaped by the server to prevent XSS
+	  window.google.identitytoolkit.start(
+	      '#gitkitWidgetDiv', // accepts any CSS selector
+	      config,
+	      '');
+	</script>
+
+</head>
+<body>
+	<div id="gitkitWidgetDiv"></div>
+</body>
+</html>
